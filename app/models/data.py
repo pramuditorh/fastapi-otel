@@ -4,7 +4,7 @@ class DataSchema(BaseModel):
   message: str = Field(...)
 
   class Config:
-    schema_extra = {
+    json_schema_extra = {
       "example": {
         "message": "This is an example"
       }

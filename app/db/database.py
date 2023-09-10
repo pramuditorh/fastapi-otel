@@ -1,6 +1,6 @@
 import motor.motor_asyncio
 
-MONGO_URI = "mongodb://root:example@localhost:27017/"
+MONGO_URI = "mongodb://root:example@mongo:27017/"
 
 client = motor.motor_asyncio.AsyncIOMotorClient(MONGO_URI)
 database = client.dojo_otel
