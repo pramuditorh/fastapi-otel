@@ -6,7 +6,7 @@ router = APIRouter()
 
 @router.get("/read")
 async def get_data():
-    data = await read_db()
+    data = read_db()
     if data:
         return ResponseModel(data, "Data sucessfully retrieve")
     return ResponseModel(data, "Empty data")
