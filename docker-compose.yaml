@@ -29,7 +29,7 @@ services:
       ME_CONFIG_MONGODB_URL: mongodb://root:example@mongo:27017/
 
   jaeger:
-    image: jaegertracing/all-in-one
+    image: jaegertracing/all-in-one:latest
     environment:
       COLLECTOR_ZIPKIN_HOST_PORT: 9411
     expose:
@@ -46,7 +46,7 @@ services:
     restart: always
 
   otel-collector:
-    image: otel/opentelemetry-collector-contrib:latest
+    image: otel/opentelemetry-collector-contrib:0.84.0
     expose:
       - '4317'
     ports:

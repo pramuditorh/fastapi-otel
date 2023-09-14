@@ -2,10 +2,6 @@ receivers:
   otlp:
     protocols:
       grpc:
-  jaeger:
-    protocols:
-      grpc:
-      thrift_http:
 
 exporters:
   jaeger:
